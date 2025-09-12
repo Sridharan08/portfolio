@@ -24,15 +24,15 @@ const Contact = () => {
     try {
       setLoading(true);
       await emailjs.send(
-        "EmailJS service ID", // your EmailJS service ID
-        "EmailJS template ID", // your EmailJS template ID
+        "service_6t0uwox", // your EmailJS service ID
+        "template_z0ao41o", // your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "public key" // your EmailJS public key
+        "4L2t6rJ2Z0sV49Pnj" // your EmailJS public key
       );
       toast.success("✅ Thanks! Your message has been sent.");
       setFormData({ name: "", email: "", subject: "", message: "" });
