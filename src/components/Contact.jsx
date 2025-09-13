@@ -34,11 +34,11 @@ const Contact = () => {
         },
         "4L2t6rJ2Z0sV49Pnj" // your EmailJS public key
       );
-      toast.success("✅ Thanks! Your message has been sent.");
+      toast.success("Thanks! Your message has been sent.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("Email send error:", error);
-      toast.error("❌ Oops! Something went wrong.");
+      toast.error("Oops! Something went wrong.");
     } finally {
       setLoading(false);
     }
